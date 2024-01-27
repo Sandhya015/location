@@ -2,7 +2,7 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError); // Fix typo: 'onerror' to 'onError'
+        navigator.geolocation.getCurrentPosition(onSuccess, onError); 
     } else {
         button.innerText = "Your browser does not support geolocation.";
     }
